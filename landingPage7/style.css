@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Barra de navegação */
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+  background-color: rgba(255, 234, 201, 1);
+  background-image: linear-gradient(to top, rgb(255, 234, 201), white);
+}
+
+.logo {
+  display: flex;
+  height: 120px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.links li:hover {
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 25%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: none;
+  padding: 10px 19px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  color: #ff616d;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 27px;
+  text-decoration: none;
+}
+/* Quem Somos */
+
+.container-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.texto-logo {
+  height: 100px;
+  margin-bottom: 140px;
+}
+
+.carro-home {
+  padding: 20px 20px;
+  width: 500px;
+}
+
+#quem-somos {
+  background-color: #ffeac9;
+  padding-top: 20px;
+  align-self: center;
+  margin: auto;
+}
+
+.container-quem-somos {
+  padding: 30px;
+  text-align: center;
+}
+
+.container-quem-somos h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+#texto-quem-somos {
+  text-align: justify;
+}
+
+/* Produtos e serviços*/
+
+.produtos {
+  background-color: #ffeac9;
+  padding-top: 30px;
+}
+
+.titulo {
+  color: #ff616d;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container-produtos {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.carro {
+  margin: 5px;
+}
+
+.carro img {
+  width: 330px;
+  height: 220px;
+}
+
+.tipo-carro {
+  color: #ff616d;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Faça parte da equipe */
+
+.formulario {
+  display: flex;
+  padding: 40px;
+}
+
+.formulario img {
+  width: 784px;
+  height: 441px;
+}
+
+.convite {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: auto;
+}
+
+.convite-texto {
+  color: #ff616d;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.convite button {
+  align-self: center;
+  margin-top: 50px;
+  background-color: #f3eaea;
+  color: rgba(134, 131, 244);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5%;
+  font-size: 20px;
+  border: 2px solid #ff616d;
+  cursor: pointer;
+}
+
+/* Depoimentos */
+
+.depoimentos {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 97, 109, 0.06) 4.75%,
+    #ff616d 104.75%
+  );
+  padding: 20px 40px;
+}
+
+.depoimentos p {
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 20px 50px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d83a56;
+  border-radius: 20px;
+  padding: 50px 30px;
+  width: 450px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.card p {
+  color: #ffffff;
+  width: 350px;
+}
+
+/* Perguntas frequentes*/
+
+.perguntas {
+  background-color: #ffeac9;
+  padding-top: 30px;
+}
+
+.container-pergunta {
+  padding: 30px 0;
+}
+
+.texto-pergunta {
+  background-color: #d83a56;
+  padding: 10px 20px;
+  width: 85%;
+
+  margin: auto;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.texto-resposta {
+  background-color: #ff616d;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Onde estamos */
+
+.onde-estamos {
+  padding: 30px 0;
+  background-color: #ffeac9;
+}
+
+.onde-estamos-texto {
+  font-size: 15px;
+  text-align: justify;
+  width: 90%;
+  margin-left: 50px;
+  color: #ff616d;
+  font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+  background-color: #ffeac9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.icone-container {
+  display: flex;
+  align-items: center;
+}
+
+.icone-container img {
+  width: 38px;
+  height: 38px;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.social-container a {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+#img-twitter {
+  border-radius: 8px;
+}
+
+footer p {
+  color: #ff616d;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  header {
+    position: static;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .container-home {
+    display: inline-block;
+    margin-top: -40px;
+  }
+
+  .texto-logo {
+    margin: 80px 0 0 25px;
+    height: 70px;
+  }
+
+  .carro-home {
+    padding: 0;
+    width: 300px;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+
+  .container-produtos {
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .formulario {
+    display: block;
+    padding: 10px;
+  }
+
+  .formulario img {
+    width: 350px;
+    height: 250px;
+    margin: 10px auto;
+    border-radius: 10px;
+  }
+
+  .card-container {
+    display: block;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px 0;
+    width: 250px;
+  }
+
+  .depoimentos {
+    margin: auto;
+    padding: 10px;
+  }
+
+  footer {
+    display: block;
+    padding: 20px 30px;
+  }
+
+  .icone-container {
+    display: block;
+  }
+
+  .social-container {
+    margin: 10px 0;
+  }
+
+  .onde-estamos-texto {
+    margin-left: 0;
+  }
+
+  #quem-somos {
+    padding-top: 0;
+  }
+
+  .container-quem-somos {
+    padding: 10;
+  }
+
+  .container-quem-somos h2, .tipo-carro, .convite-texto {
+    font-size: 18px;
+}
+
+}
