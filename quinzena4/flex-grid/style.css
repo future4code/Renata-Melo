@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: mediumvioletred;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.lado-esquerdo {
+  display: flex;
+  align-items: center;
+}
+
+.icone-nav {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.nome {
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+}
+
+.menu-esquerdo {
+  width: 20%;
+  background-color: #f2d0e0;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.icone-link {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.texto-do-link {
+  text-transform: uppercase;
+}
+
+.sessao-principal {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 20px;
+}
+
+.card-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  box-shadow: 0 0 5px darkgray;
+  text-align: center;
+}
+
+.card-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  box-shadow: 0 0 5px darkgray;
+  text-align: center;
+}
+
+.card-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  box-shadow: 0 0 5px darkgray;
+  text-align: center;
+}
+
+.card-4 {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  box-shadow: 0 0 5px darkgray;
+  text-align: center;
+}
+
+.card-5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  box-shadow: 0 0 5px darkgray;
+  text-align: center;
+}
+
+.card-6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  box-shadow: 0 0 5px darkgray;
+  text-align: center;
+}
+
+.card-7 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  box-shadow: 0 0 5px darkgray;
+  text-align: center;
+}
+
+.imagem-bolo {
+  width: 100%;
+}
+
+.titulo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+footer {
+  background-color: mediumvioletred;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
