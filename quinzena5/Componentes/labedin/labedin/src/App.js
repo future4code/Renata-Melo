@@ -1,42 +1,129 @@
 import React from 'react';
-import './App.css';
+import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
+import CardPequeno from './components/CardPequeno/CardPequeno';
+import ImagemPerfil from './components/Images/foto-perfil.jpg';
+import email from './components/Images/novo-email.png';
+import endereco from './components/Images/endereco.png';
+
+const GlobalStyled = createGlobalStyle `
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+`;
+
+const AppDiv = styled.div `
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+`;
+
+const PageSectionContainerDiv = styled.div `
+  width: 40vw;
+  margin: 10px 0;
+`;
+
+const PageSectionContainerH2 = styled.h2 `
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+`;
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="page-section-container">
-        <h2>Dados pessoais</h2>
+    <AppDiv className="App">
+      <GlobalStyled />
+      <PageSectionContainerDiv className="page-section-container">
+        <PageSectionContainerH2>Dados pessoais</PageSectionContainerH2>
         <CardGrande 
-          imagem="https://uploads-ssl.webflow.com/5d640f4558306be99cf47a0e/5dd57846babb597b77c6bb1d_PerfilFuture4_cor.png" 
-          nome="Astrodev" 
-          descricao="Oi, eu sou o Astrodev. Sou o chefe dos alunos da Labenu. Adoro pedir e-mails na sexta-feira e esperar os alunos responderem só para responder com uma bronca e dar mais trabalho para eles."
+          imagem={ImagemPerfil}
+          nome='Renata Gomes de Melo'
+          descricao='Advogada com cinco anos de experiência e especialização na área trabalhista.
+          Atualmente estudando na Labenu e em busca da transição de carreira para a tecnologia.'
         />
-        
+
         <ImagemButton 
           imagem="https://image.flaticon.com/icons/png/512/117/117472.png" 
           texto="Ver mais"
         />
-      </div>
-
-      <div className="page-section-container">
-        <h2>Experiências profissionais</h2>
-        <CardGrande 
-          imagem="https://s3.amazonaws.com/future4.com.br/static/headf4-c492117ca2373dc85ca81bf715b3dc2a.png" 
-          nome="Labenu" 
-          descricao="Formando desenvolvedores para o mercado de trabalho!" 
-        />
         
-        <CardGrande 
-          imagem="https://imagens.canaltech.com.br/empresas/4418.400.jpg" 
-          nome="NASA" 
-          descricao="Apontando defeitos." 
-        />
-      </div>
+      </PageSectionContainerDiv>
 
-      <div className="page-section-container">
-        <h2>Minhas redes sociais</h2>
+      <PageSectionContainerDiv className="page-section-container">
+        <CardPequeno 
+          imagem={email}
+          texto="Email:"
+          complemento="rntgmml@gmail.com"
+        />
+
+        <CardPequeno 
+          imagem={endereco}
+          texto="Endereço:"
+          complemento="Belo Horizonte/MG"
+        />
+
+      </PageSectionContainerDiv>
+
+      <PageSectionContainerDiv className="page-section-container">
+        <PageSectionContainerH2>Experiências profissionais</PageSectionContainerH2>
+        <CardGrande 
+          imagem="https://logodownload.org/wp-content/uploads/2015/12/dhl-logo-0-1.png" 
+          nome="DHL" 
+          descricao="Hoje, atuo como Sales Support Analyst na DHL Global Forwarding, responsável por atendimento ao cliente e elaboração de propostas comerciais para movimentação de cargas em todos os modais de transporte. Também tive passagem com produto aéreo, entrando em contato com as companhias aéreas para elaboração de cotações." 
+        />
+
+        <CardGrande 
+          imagem="https://www.ultratontrailer.com/uploads/image/20200527/zf-announces-the-acquisition-of-wabco.jpg" 
+          nome="ZF WABCO" 
+          descricao="Anteriormente a DHL, realizei estágio na área de Compras na WABCO (atual ZF Group), atuando com materiais indiretos no setor automotivo. Minha primeira experiência profissional foi como assistente administrativo no setor fiscal e contábil na empresa MG6 Assessoria Empresarial, onde desenvolvi autonomia e senso de responsabilidade." 
+        />
+      </PageSectionContainerDiv>
+
+      <PageSectionContainerDiv className="page-section-container">
+        <PageSectionContainerH2>Portifólio</PageSectionContainerH2>
+        <CardGrande 
+          imagem="https://image.flaticon.com/icons/png/512/38/38401.png" 
+          nome="Github" 
+          descricao="Link do portifólio" 
+        />
+
+      </PageSectionContainerDiv>
+
+      <PageSectionContainerDiv className="page-section-container">
+        <PageSectionContainerH2>Competências</PageSectionContainerH2>
+        <CardGrande 
+          imagem="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" 
+          nome="CSS" 
+          descricao="Nivel - Avançado" 
+        />
+
+        <CardGrande 
+          imagem="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" 
+          nome="HTML" 
+          descricao="Nivel - Avançado" 
+        />
+
+        <CardGrande 
+          imagem="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" 
+          nome="JavaScript" 
+          descricao="Nivel - Intermediário" 
+        />
+
+        <CardGrande 
+          imagem="https://img.stackshare.io/service/1020/OYIaJ1KK.png" 
+          nome="React JS" 
+          descricao="Nivel - Iniciante" 
+        />
+      </PageSectionContainerDiv>
+
+      <PageSectionContainerDiv className="page-section-container">
+        <PageSectionContainerH2>Minhas redes sociais</PageSectionContainerH2>
         <ImagemButton 
           imagem="https://d2v9ipibika81v.cloudfront.net/uploads/sites/261/2017/01/facebook-logo-3.png" 
           texto="Facebook" 
@@ -46,8 +133,8 @@ function App() {
           imagem="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-1-1.png" 
           texto="Twitter" 
         />        
-      </div>
-    </div>
+      </PageSectionContainerDiv>
+    </AppDiv>
   );
 }
 
